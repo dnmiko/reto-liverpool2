@@ -2,8 +2,6 @@ import React, {
     Component
 } from 'react';
 import './style.css';
-import Nav from '../Nav/Nav';
-import allProducts from '../../services/allProducts';
 import ProductCard from '../ProductCard/ProductCard';
 
 class ListProducts extends Component {
@@ -12,17 +10,6 @@ class ListProducts extends Component {
         this.state = {
             products: ""
         }
-    }
-
-    componentDidMount() {
-        allProducts().then((resp) => {
-            console.log(resp.data)
-            this.setState(
-                { products: resp.data.data.allProducts }
-            )
-        }).catch((err) => {
-            console.log(err)
-        })
     }
 
     renderProducts = () => {
@@ -44,7 +31,6 @@ class ListProducts extends Component {
     render() {
         return (
             <div className="App">
-                <Nav props={this.props} />
                 <div className="container">
                     <div className="title">
                         <h1>

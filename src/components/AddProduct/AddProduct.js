@@ -2,12 +2,6 @@ import React, {
     Component
 } from 'react';
 import './style.css';
-import Nav from '../Nav/Nav';
-import add from '../../services/addProduct';
-import remove from '../../services/deleteProduct';
-import update from '../../services/updateProduct';
-import swal from 'sweetalert';
-import logo from '../../logo.png';
 
 class AddProduct extends Component {
     constructor(props) {
@@ -30,72 +24,9 @@ class AddProduct extends Component {
         });
     }
 
-    addRequest = (event) => {
-        event.preventDefault();
-
-        let payload = {
-            name: this.state.name,
-            description: this.state.description,
-            price: this.state.price,
-            image_url: this.state.image_url
-        }
-
-        add(payload).then((resp) => {
-            this.setState({
-                name: "",
-                description: "",
-                price: "",
-                image_url: ""
-            });
-
-            swal("Producto guardado", "El producto fue almacenado de manera exitosa.", "success");
-        }).catch((err) => {
-            console.log(err);
-        });
-    }
-
-    deleteRequest = (event) => {
-        event.preventDefault();
-
-        let payload = {
-            id: this.state.id
-        }
-
-        remove(payload).then((resp) => {
-            this.setState({
-                id: "",
-            });
-
-            swal("Producto eliminado", "El producto fue eliminado de manera exitosa.", "success");
-        }).catch((err) => {
-            console.log(err);
-        });
-    }
-
-    updateRequest = (event) => {
-        event.preventDefault();
-
-        update(this.state).then((resp) => {
-            this.setState({
-                id: "",
-                name: "",
-                description: "",
-                price: "",
-                image_url: ""
-            });
-
-            swal("Producto actualizado", "El producto fue actualizado de manera exitosa.", "success");
-        }).catch((err) => {
-            console.log(err);
-        });
-
-
-    }
-
     render() {
         return (
             <div className="App">
-                <Nav props={this.props} />
                 <div className="containerLogged">
                     <div className="cardLogged">
                         <div className="half-card infoLogged">

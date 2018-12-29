@@ -1,0 +1,86 @@
+.App-header {
+    background: linear-gradient(to right, #e10098, #e799c2);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.App-logo {
+    height: 5.5vmin;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    background: white;
+    flex-direction: column;
+}
+
+.title {
+    display: block;
+    width: 70vw;
+    height: 7vw;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: flex-start;
+    background: #F6F6F6;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.searchGroup {
+    width: 80%;
+    height: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    color: #c81685;
+}
+
+h2 {
+    color: #c81685;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 60%;
+    height: 5vh;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    border: solid 1px gray;
+    padding-left: 1.5vw;
+}
+
+.btn {
+    background: #dd6ea9;
+    margin-top: 3vh;
+    border: none;
+    border-radius: 10px;
+    height: 6.5vh;
+    width: 35%;
+    color: white;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: center;
+    font-weight: 500;
+}
