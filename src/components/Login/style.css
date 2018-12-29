@@ -1,0 +1,95 @@
+h1 {
+    color: #c81685;
+}
+
+h3 {
+    color: #c81685;
+}
+
+.media {
+    background-image: url('../../images/liverpool.jpg');
+    background-position-x: center;
+    border-radius: 25px 0px 0px 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: block;
+    width: 70vw;
+    height: 7vw;
+    justify-content: center;
+}
+
+.description {
+    font-size: 2.5vh;
+    width: 75%;
+    color: #666666;
+}
+
+.formGroup {
+    width: 75%;
+    height: 35vh;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.telInput {
+    width: 75%;
+    height: 5vh;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    border: none;
+    padding-left: 1.5vw;
+}
+
+.telInput:focus::-webkit-input-placeholder {
+    color: #e6e6e6;
+}
+
+.telInput::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+
+.btn {
+    background: #dd6ea9;
+    margin-top: 5vh;
+    border: none;
+    border-radius: 10px;
+    height: 10vh;
+    width: 60%;
+    color: white;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: center;
+    font-weight: 600;
+}
+
+.btn:active {
+    border: none;
+}
+
+.btn:hover {
+    background: #c81685;
+}

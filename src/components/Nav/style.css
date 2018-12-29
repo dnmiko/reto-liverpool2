@@ -1,0 +1,43 @@
+.App-nav {
+    background: linear-gradient(to right, #e10098, #e799c2);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+}
+
+.App-logo {
+    height: 5.5vmin;
+}
+
+.menu-item {
+    color: white;
+    font-size: 2.5vh;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1vh;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 25vw;
+    justify-content: center
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
