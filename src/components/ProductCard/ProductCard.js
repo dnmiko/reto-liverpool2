@@ -20,16 +20,11 @@ class ProductCard extends Component {
     render() {
         return (
             <div className="productCard">
-                <img className="card_img" src={this.state.product.image_url} alt="Imagen del producto" />
+                <img className="card_img" src={this.state.product.image_url} alt="Imagen no disponible" />
                 <div className="productInfoContainer">
                     <h4>{this.state.product.name}</h4>
                     <h5>${this.state.product.price}</h5>
                     <p>{this.state.product.description}</p>
-                    <p>ID único:
-                        <span className="productID">
-                            {this.state.product._id}
-                        </span>
-                    </p>
                 </div>
             </div>
         )
