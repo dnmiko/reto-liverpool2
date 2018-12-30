@@ -14,6 +14,7 @@ Debido a la restricción de tiempo, se desarrolló un prototipo de una vista muc
 
 - Almacenar los criterios de búsqueda utilizados previamente.
 - Agregar algún tipo de sort o filtros según las preferencias del usuario, es decir, basado en precio o popularidad.
+- Agregar manejo de errores según los resultados obtenidos del API, es decir, en caso de que algún producto no tenga imagen o una búsqueda no regrese ningún resultado.
 
 ## Créditos
 
